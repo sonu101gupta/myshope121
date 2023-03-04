@@ -1,0 +1,132 @@
+.main{
+	min-height: calc(100vh - 4.65rem);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.form-back{
+  background: rgba(255, 255, 255, .5);
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.form-back .form-inp{
+  padding: 5px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+.form-back .form-btn{
+  cursor: pointer;
+  background: green;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  margin-top: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.Product-cart{
+  border: 1px solid #000;
+  border-radius: 0.5cm;
+  background: #fff;
+  width: 100%;
+  margin-left: 2px;
+  height: 165px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #000;
+  transition: 0.3s;
+}
+.user-row{
+  border: 1px solid #000;
+  border-radius: 0.5cm;
+  background: #fff;
+  width: 100%;
+  margin-left: 2px;
+  height: 100px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #000;
+  transition: 0.3s;
+}
+.Product-cart img{
+  height: 158px;
+  width: 165px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0.5cm 0 0 0.5cm;
+}
+.prod-desp{
+  position: absolute;
+  margin: -150px 0 0 250px;
+}
+.user-desp{
+  position: absolute;
+  margin: 10px 0 0 100px;
+}
+.btn{
+	margin-top: 1rem;
+  padding: 0.6rem 1.8rem;
+  background-color: #1179e7;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.sales{
+	background: #cfcfcf;
+	color: #000;
+	width: 150px;
+	height: 150px;
+	border: 2px solid #000;
+	text-align: center;
+	border-radius: 50%;
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.sales span{
+	font-size: 30px;
+}
+@media (max-width: 470px){
+  .form-back .form-inp, .form-back .form-btn{
+    width: 100%;
+  }
+}
+@media (max-width: 530px){
+  .prod-desp{
+    margin: -150px 0 0 150px;
+  }
+}
+@media (max-width: 430px){
+  .Product-cart{
+    height: 300px;
+    width: 100%;
+  }
+  .prod-desp{
+    margin: -20px 0 0 15px;
+  }
+}
